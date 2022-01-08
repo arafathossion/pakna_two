@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --white: white;
+  --black: black;
+  --main-color: #00ffaa;
+  --secondary-color: #2e9133;
+  --transition: all 0.8s linear;
+  --border-radius: 5px;
+  --brand-font: "Montserrat", sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --heading-font: "Bebas Neue", cursive;
+  --height: 16px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.main-color {
+  color: var(--main-color);
+}
+.heading-one {
+  font-size: calc(25px + 4vmin);
+  text-transform: capitalize;
+}
+.heading-middle {
+  font-size: calc(20px + 2vmin);
+  text-transform: capitalize;
+}
+.heading-small {
+  font-size: calc(20px + 0.5vmin);
+  text-transform: capitalize;
+}
+
+.col-web-3 {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
+  width: 31%;
+}
+.col-web-2 {
+  width: 50%;
+}
+.col-web-80 {
+  width: 90%;
+}
+.col-web-20 {
+  width: 10%;
+}
+.pl {
+  padding-left: calc(var(--height) + 10px);
+}
+.pr {
+  padding-right: calc(var(--height) - 8px);
+}
+.pr-lg {
+  padding-right: calc(var(--height) + 4rem);
+}
+.pt {
+  padding-top: calc(var(--height) - 1px);
+}
+.pb {
+  padding-bottom: calc(var(--height) - 10px);
+}
+.pb-lg {
+    padding-bottom: calc(var(--height) + 10px);
+  }
+.px-lg {
+  padding-left: calc(var(--height) + 10px);
+  padding-right: calc(var(--height) + 10px);
+}
+.py-lg {
+  padding-top: calc(var(--height) - 0px);
+  padding-bottom: calc(var(--height) + 5px);
+}
+.px {
+  padding: calc(var(--height) + 0px) 0;
+}
+.mx {
+  margin: calc(var(--height) + 4px) 0;
+}
+.m-60{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.img-80 {
+  max-width: 80%;
+}
+.flex {
+  display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-end {
+  justify-content: end;
+}
+.flex-direction {
+  flex-direction: column;
+}
+
+.card-img-3 {
+  max-width: 60%;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+.text {
+  font-size: calc(10px + 1vmin);
+  line-height: 25px;
+  font-family: var(--main-font);
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-footer span {
+  font-size: calc(20px + 1vmin);
+  font-weight: bolder;
+  color: var(--main-color);
+}
+.btn {
+  color: var(--white);
+  background-color: var(--main-color);
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: calc(12px + 1vmin);
+  font-weight: bold;
+  padding: 12px 15px;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+.btn:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body {
+  padding-top: 30px;
+  overflow-x: hidden;
+}
+
+/* Navagation Bar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.brand_logo {
+  display: flex;
+  align-items: center;
+}
+
+.brand_logo p {
+  padding-left: 20px;
+  text-transform: capitalize;
+  font-size: calc(12px + 2vmin);
+  display: inline-block;
+  font-family: var(--brand-font);
+  font-weight: 700;
+}
+.brand_logo p span {
+  color: var(--main-color);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  color: var(--black);
+  display: inline-block;
+  font-size: calc(12px + 1vmin);
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+
+/* ===========
+  1.BANNER
+  ============ */
+#banner {
+  display: flex;
+}
+.banner-content {
+  width: 30%;
+}
+.banner-content h1 {
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+.banner-content h1 span {
+  color: var(--main-color);
+}
+.banner-img {
+  height: auto;
+  width: 70%;
+  left: 35%;
+  top: 0;
+  position: relative;
+}
+.banner-img > :nth-child(1) {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  z-index: 1;
+  width: 36%;
+}
+.banner-img > :nth-child(2) {
+  width: 41%;
+}
+
+/*===============
+2.FACILITY
+===============  */
+.icon-img {
+  max-width: 100%;
+}
+
+.facility-img img {
+  border: 1px solid #000;
+}
+
+@media (max-width: 767px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  section:nth-of-type(1) {
+    order: 1;
+  }
+  section:nth-of-type(2) {
+    order: 3;
+  }
+  section:nth-of-type(3) {
+    order: 2;
+  }
+  #facility .df > :nth-child(1){
+      order: 2;
+  }
+  #facility .df > :nth-child(2){
+      order: 1;
+  }
+  .pr-sm {
+    padding-right: calc(var(--height) - .5rem);
+  }
+  .py-lg {
+    padding-top: calc(var(--height) + 30px);
+    padding-bottom: calc(var(--height) + 30px);
+  }
+  .py-lg-sm {
+    padding-top: calc(var(--height) - 10px);
+    padding-bottom: calc(var(--height) - 10px);
+  }
+  .mx-sm {
+    margin: calc(var(--height) + 0px) 0;
+  }
+  .justify-content-center {
+    justify-content: center;
+  }
+  .df {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    display: flex;
+  }
+  .col-mobile-3 {
+    width: 100%;
+  }
+  .icon-sm-img {
+    width: 100%;
+  }
+  nav ul li a {
+    text-decoration: none;
+    padding: 10px 6px;
+  }
+  .banner-img {
+    height: auto;
+    width: 70%;
+    left: 15%;
+    top: 0;
+    position: relative;
+  }
+  .banner-img > :nth-child(1) {
+    position: absolute;
+    top: 9%;
+    left: 5%;
+    z-index: 1;
+    width: 90%;
+  }
+  .banner-img > :nth-child(2) {
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) {
+  .card {
+    display: flex;
+  }
+}
